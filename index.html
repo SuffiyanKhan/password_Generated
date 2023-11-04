@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://anas-pssword-generator.netlify.app/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="https://anas-pssword-generator.netlify.app/favicon/favicon-32x32.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="https:https://anas-pssword-generator.netlify.app/favicon/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <meta property="og:description" content="Crafted by Suffiyan Ahmed using HTML, CSS, and JavaScript. A password generator is a tool that creates strong and secure passwords, enhancing online security. Customize password length and character types." />
+    <meta property="og:url" content="https://anas-pssword-generator.netlify.app/" />
+    <meta property="og:image" content="https://anas-pssword-generator.netlify.app/img/PasswordGenerator.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Expense managment system</title>
+    <style>
+        
+            #img{
+                position: relative;
+                left: 20px;
+                width: 50px;
+                height:50px;
+                border-radius: 200px;
+                display: flex;
+                margin: auto;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 5px;
+            position: relative;
+        }
+        #log_out{
+            position: relative;
+            top: 10px;
+            right: 15px;
+            font-size: 26px;
+            cursor: pointer;
+        }
+        #myFileInput{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="profile">
+            <img id="img" src="image/channels4_profile.jpg" alt="">
+        </div>
+        <div class="image">
+            <abbr title="Logout">
+                <i id="log_out" class="fa-solid fa-right-from-bracket"></i>
+            </abbr>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <h2>Password Generator</h2>
+            <div class="result-container">
+              <span id="result"></span>
+              <button class="btn" onclick="textCopy()" >
+                <i class="far fa-clipboard"></i>
+              </button>
+            </div>
+            <div class="settings">
+              <div class="setting">
+                <label>Password Length</label>
+                <input type="number" id="length" min="4" max="50" value="12" />
+              </div>
+              <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked />
+              </div>
+              <div class="setting">
+                <label>Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked />
+              </div>
+              <div class="setting">
+                <label>Include numbers</label>
+                <input type="checkbox" id="numbers" checked />
+              </div>
+              <div class="setting">
+                <label>Include symbols</label>
+                <input type="checkbox" id="symbols" checked />
+              </div>
+            </div>
+          
+            <button class="btn btn-large" id="gP">Generate Password</button>
+          </div>
+        </div>
+    
+          <footer>
+    
+    
+            <div class="main-footer">
+                <div>
+                    <h1 class="anas">Suffiyan Ahmed </h1>
+                </div>
+    
+                <div class="main-icons">
+                </div>
+            </div>
+    
+            <div class="p">
+                <p>&copy; 2023 Suffiyan Ahmed . All Rights Reserved. | Designed and Developed by Suffiyan Ahmed </p>
+            </div>
+            
+    
+        </footer>
+    
+        <script type="module" src="welcom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    
+        <script src="welcom.js"></script>
+</body>
+</html>

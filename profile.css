@@ -1,0 +1,150 @@
+ /* Gogglr fonts */      
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300;400;500;600;700&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+:root{
+    /* color */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    /* transition */
+    --tran-02: all 0.2s ease ;
+    --tran-03: all 0.3s ease ;
+    --tran-04: all 0.4s ease ;
+    --tran-05: all 0.5s ease ;
+}
+/* body{
+    background-color: var(--body-color);
+} */
+section{
+    background-image: url(image/image-2/pexels-bychlo-18035622.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+     /* display: flex;
+justify-content: center;
+align-items: center; */
+}
+.sidebar{
+    position: fixed;
+    left: -240px;
+    width: 240px;
+    height: 100%;
+    background-color: var(--sidebar-color);
+    transition: var(--tran-03);
+}
+.sidebar header{
+    color: var(--text-color);
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;            
+}
+.sidebar a{
+    display: block;
+    color: var(--text-color);
+    height: 65px;
+    width: 100%;
+    line-height: 65px;
+    padding-left: 30px;
+    border-bottom: 1px solid var(--text-color);
+    border-top: 1px solid black;
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans',sans-serif ;
+    transition: var(--tran-05);
+}
+a:hover{
+    border-left: 5px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+}
+.sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-size: 29px;
+    margin: 15px 30px;
+    border-radius: 5px;
+    transition: var(--tran-03);
+} 
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+/* @media (max-width:860px) {
+    .sidebar{
+        height: auto;
+        width: 70px;
+        left: 0;
+        margin: 100px 0;
+
+    }
+    .sidebar a i{
+        margin-left: -10px;
+    }
+    a:hover{
+        width: 200px;
+        background-color: inherit;
+    }
+    .sidebar a:hover span{
+        opacity: 1;
+        visibility: visible;
+    }
+    header,#btn,#cancel{
+        display: none;
+    }
+    span{
+        position: absolute;
+        margin-left: 23px;
+        opacity: 0;
+        visibility: hidden;
+    }
+} */
+
+
+
+
+
+

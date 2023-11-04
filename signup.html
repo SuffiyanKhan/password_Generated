@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup and login.css">
+</head>
+<body class="container">
+    <section>
+        <div class="signup-box">
+            <div>
+                <h2>Registerd</h2>
+                <form id="form">
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="text" name="" id="fname">
+                        <label for="">Full name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="email" name="" id="email">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password" name="" id="password">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="remember-me">
+                        <label><input type="checkbox" name="" id="checkbox">Agree trems and policy</label>
+                    </div>
+                    <button  onclick="signin()">Register</button>
+                        <div class="register-list">
+                         <p>I have a account?<a href="./login.html">Log in</a></p>
+                        </div>
+                </form>
+            </div>        
+        </div>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="app.js"></script>       
+</body>
+</html>
